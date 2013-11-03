@@ -20,7 +20,7 @@ public:
 
     /// Application Scene Actions ///
 
-    CCScene* CreateScene( int sceneId ) override;
+    Scene* CreateScene( int sceneId ) override;
 };
 
 

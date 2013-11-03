@@ -12,6 +12,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Toffee\Core\Application.h" />
+    <ClInclude Include="..\include\Toffee\Core\Scene.h" />
     <ClInclude Include="..\include\Toffee\Toffee.h" />
     <ClInclude Include="..\src\ToffeePch.h" />
   </ItemGroup>

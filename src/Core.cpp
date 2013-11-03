@@ -3,6 +3,7 @@
 #include "ToffeePch.h"
 
 #include <Toffee/Core/Application.h>
+#include <Toffee/Core/Scene.h>
 
 
 namespace Toffee
@@ -12,6 +13,7 @@ namespace Toffee
 // Contents
 //
 //   Application
+//   Scene
 //
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -66,6 +68,35 @@ void Application::applicationDidEnterBackground()
 Int Application::Run()
 {
     return CCApplication::sharedApplication()->run();
+}
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Scene
+//
+
+Scene::Scene()
+{
+    this->autorelease();
+}
+
+
+void Scene::onEnter()
+{
+    this->setContentSize( CCDirector::sharedDirector()->getWinSize() );
+
+    this->scheduleUpdate();
+
+    this->OnSceneEnter();
+}
+
+
+void Scene::onExit()
+{
+    this->OnSceneExit();
+
+    this->unscheduleUpdate();
 }
 
 

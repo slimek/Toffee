@@ -22,7 +22,7 @@ void HelloToffeeApp::OnDidFinishLaunching()
 }
 
 
-CCScene* HelloToffeeApp::CreateScene( int sceneId )
+Scene* HelloToffeeApp::CreateScene( int sceneId )
 {
     switch ( sceneId )
     {

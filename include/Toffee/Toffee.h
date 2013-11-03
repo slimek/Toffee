@@ -12,6 +12,11 @@ namespace Toffee
 
 using namespace Caramel;
 
+/// Forwards Declaration ///
+
+class Application;
+class Scene;
+
 } // namespace Toffee
 
 #endif // __TOFFEE_TOFFEE_H

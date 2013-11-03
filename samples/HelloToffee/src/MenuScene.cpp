@@ -4,7 +4,7 @@
 #include "MenuScene.h"
 
 
-MenuScene::MenuScene()
+void MenuScene::OnSceneEnter()
 {
     auto sprite = CCSprite::create( "HelloWorld.png" );
 

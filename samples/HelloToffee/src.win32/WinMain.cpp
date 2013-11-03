@@ -5,6 +5,10 @@
 #include "HelloToffeeApp.h"
 #include <Windows.h>
 
+#if defined( _DEBUG )
+#include <vld.h>
+#endif
+
 
 using namespace cocos2d;
 

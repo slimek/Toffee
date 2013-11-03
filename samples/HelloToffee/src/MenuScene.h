@@ -3,16 +3,19 @@
 #ifndef __HELLO_TOFFEE_MENU_SCENE_H
 #define __HELLO_TOFFEE_MENU_SCENE_H
 
-#include <cocos2d.h>
+#include <Toffee/Core/Scene.h>
 
 
-class MenuScene : public cocos2d::CCScene
+class MenuScene : public Scene
 {
 public:
 
     enum { ID = 1 };
 
-    MenuScene();
+
+    /// Scene Enter/Exit Events ///
+
+    void OnSceneEnter();
 
 };
 

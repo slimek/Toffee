@@ -27,16 +27,16 @@ public:
 
     /// CCApplicationProtocol Events ///
 
-    bool applicationDidFinishLaunching()  override;
-    void applicationWillEnterForeground() override;
-    void applicationDidEnterBackground()  override;
+    bool applicationDidFinishLaunching()  final override;
+    void applicationWillEnterForeground() final override;
+    void applicationDidEnterBackground()  final override;
 
 
 private:
     
     /// Scene Actions ///
 
-    virtual cocos2d::CCScene* CreateScene( int sceneId ) = 0;
+    virtual Scene* CreateScene( int sceneId ) = 0;
 
 
     /// Application Events ///
