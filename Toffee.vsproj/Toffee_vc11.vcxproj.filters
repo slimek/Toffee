@@ -32,7 +32,7 @@
     <ClCompile Include="..\src\Core.cpp">
       <Filter>2. Sources</Filter>
     </ClCompile>
-    <ClCompile Include="..\src\ToffeePchCreator.cpp">
+    <ClCompile Include="..\src\ToffeePch.cpp">
       <Filter>3. Precompiled Header</Filter>
     </ClCompile>
   </ItemGroup>

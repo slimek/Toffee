@@ -19,19 +19,43 @@ namespace Toffee
 // Application
 //
 
+Application::Application( int initialSceneId )
+    : m_initialSceneId( initialSceneId )
+{
+}
+
+
 bool Application::applicationDidFinishLaunching()
 {
+    auto director = CCDirector::sharedDirector();
+    director->setOpenGLView( CCEGLView::sharedOpenGLView() );
+
+    // TODO:
+    // eglView->setDesignResolutionSize()
+
+    // TODO:
+    // fileUtils->set or addSearchPath()
+
+    director->setDisplayStats( true );
+
+    this->OnDidFinishLaunching();
+
+    auto scene = this->CreateScene( m_initialSceneId );
+    director->runWithScene( scene );
+
     return true;
 }
 
 
 void Application::applicationWillEnterForeground()
 {
+    CCDirector::sharedDirector()->startAnimation();
 }
 
 
 void Application::applicationDidEnterBackground()
 {
+    CCDirector::sharedDirector()->stopAnimation();
 }
 
 
@@ -41,7 +65,7 @@ void Application::applicationDidEnterBackground()
 
 Int Application::Run()
 {
-    return EXIT_SUCCESS;
+    return CCApplication::sharedApplication()->run();
 }
 
 

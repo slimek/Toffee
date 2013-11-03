@@ -1,14 +1,40 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="Game Entry">
+    <Filter Include="1. Win32 Entry">
+      <UniqueIdentifier>{dd5efcf1-b2dc-4e62-85ff-e74159975076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="2. Game">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
     </Filter>
+    <Filter Include="3. Percompiled Headers">
+      <UniqueIdentifier>{b0371d6d-8144-43bf-80b0-a135a10a8a6b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="..\src.win32\WinMain.cpp">
-      <Filter>Game Entry</Filter>
+    <ClCompile Include="..\src\HelloToffeeApp.cpp">
+      <Filter>2. Game</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\MenuScene.cpp">
+      <Filter>2. Game</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src.win32\WinMain.cpp">
+      <Filter>1. Win32 Entry</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\HelloToffeePch.cpp">
+      <Filter>3. Percompiled Headers</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\HelloToffeeApp.h">
+      <Filter>2. Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\MenuScene.h">
+      <Filter>2. Game</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\HelloToffeePch.h">
+      <Filter>3. Percompiled Headers</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>

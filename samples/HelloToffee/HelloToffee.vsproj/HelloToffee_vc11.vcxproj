@@ -52,13 +52,13 @@
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_WINDOWS;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\Caramel\include;..\..\..\..\CandyJar\include;..\..\..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\cocos2d-x\cocos2dx\platform\win32;..\..\..\..\cocos2d-x\cocos2dx\platform;..\..\..\..\cocos2d-x\cocos2dx;..\..\..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src;..\..\..\include;..\..\..\..\Caramel\include;..\..\..\..\CandyJar\include;..\..\..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\cocos2d-x\cocos2dx\platform\win32;..\..\..\..\cocos2d-x\cocos2dx\platform;..\..\..\..\cocos2d-x\cocos2dx;..\..\..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>HelloToffeePch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -68,14 +68,14 @@
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
-      <PrecompiledHeader>
-      </PrecompiledHeader>
+      <PrecompiledHeader>Use</PrecompiledHeader>
       <Optimization>MaxSpeed</Optimization>
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_WINDOWS;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\..\Caramel\include;..\..\..\..\CandyJar\include;..\..\..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\cocos2d-x\cocos2dx\platform\win32;..\..\..\..\cocos2d-x\cocos2dx\platform;..\..\..\..\cocos2d-x\cocos2dx;..\..\..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src;..\..\..\include;..\..\..\..\Caramel\include;..\..\..\..\CandyJar\include;..\..\..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\..\..\cocos2d-x\cocos2dx\platform\win32;..\..\..\..\cocos2d-x\cocos2dx\platform;..\..\..\..\cocos2d-x\cocos2dx;..\..\..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
+      <PrecompiledHeaderFile>HelloToffeePch.h</PrecompiledHeaderFile>
     </ClCompile>
     <Link>
       <SubSystem>Windows</SubSystem>
@@ -86,6 +86,12 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\src.win32\WinMain.cpp" />
+    <ClCompile Include="..\src\HelloToffeeApp.cpp" />
+    <ClCompile Include="..\src\HelloToffeePch.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\src\MenuScene.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\..\Caramel\Caramel.vsproj\Caramel_vc11.vcxproj">
@@ -97,6 +103,11 @@
     <ProjectReference Include="..\..\..\Toffee.vsproj\Toffee_vc11.vcxproj">
       <Project>{a573a640-4c2a-4103-8a11-37a1792a7c04}</Project>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\HelloToffeeApp.h" />
+    <ClInclude Include="..\src\HelloToffeePch.h" />
+    <ClInclude Include="..\src\MenuScene.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

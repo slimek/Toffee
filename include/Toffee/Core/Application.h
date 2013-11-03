@@ -18,6 +18,9 @@ class Application : public cocos2d::CCApplication
 {
 public:
 
+    explicit Application( Int initialSceneId );
+
+
     // Main Loop Entry
     Int Run();
 
@@ -31,8 +34,25 @@ public:
 
 private:
     
+    /// Scene Actions ///
+
+    virtual cocos2d::CCScene* CreateScene( int sceneId ) = 0;
+
+
+    /// Application Events ///
+
+    virtual void OnDidFinishLaunching()  {}
+    virtual void OnWillEnterForeground() {}
+    virtual void OnDidEnterBackground()  {}
+
+
     // Hide some CCApplication functions
     using cocos2d::CCApplication::run;
+
+
+    /// Data Members ///
+
+    int m_initialSceneId;
 };
 
 
