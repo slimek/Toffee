@@ -32,5 +32,8 @@
     <ClCompile Include="..\src\Core.cpp">
       <Filter>2. Sources</Filter>
     </ClCompile>
+    <ClCompile Include="..\src\ToffeePchCreator.cpp">
+      <Filter>3. Precompiled Header</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>
