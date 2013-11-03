@@ -1,0 +1,11 @@
+# Generated Files/Directories
+lib/
+
+# Visual Studio Temporary Files/Directories
+Debug.win32/
+Release.win32/
+ipch/
+obj/
+*.opensdf
+*.sdf
+*.suo
