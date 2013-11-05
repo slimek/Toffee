@@ -1,11 +1,19 @@
-# Generated Files/Directories
+# Common Generated Files
+obj/
 lib/
 
-# Visual Studio Temporary Files/Directories
-Debug.win32/
-Release.win32/
+# Visual Studio Generated Files
 ipch/
-obj/
+[Dd]ebug*/
+[Rr]elease*/
 *.opensdf
 *.sdf
 *.suo
+*.user
+
+# Eclipse + NDK Generated Files
+bin/
+gen/
+libs/
+.settings/
+project.properties
