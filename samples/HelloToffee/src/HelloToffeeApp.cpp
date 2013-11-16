@@ -12,16 +12,6 @@ HelloToffeeApp::HelloToffeeApp()
 }
 
 
-void HelloToffeeApp::OnDidFinishLaunching()
-{
-    if ( kTargetWindows == this->getTargetPlatform() )
-    {
-        auto fileUtils = CCFileUtils::sharedFileUtils();
-        fileUtils->addSearchPath( "../assets" );
-    }
-}
-
-
 Scene* HelloToffeeApp::CreateScene( int sceneId )
 {
     switch ( sceneId )

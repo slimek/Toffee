@@ -13,11 +13,6 @@ public:
     HelloToffeeApp();
 
     
-    /// Application Events ///
-
-    void OnDidFinishLaunching();
-
-
     /// Application Scene Actions ///
 
     Scene* CreateScene( int sceneId ) override;

@@ -3,11 +3,34 @@
 #ifndef __TOFFEE_CORE_APPLICATION_H
 #define __TOFFEE_CORE_APPLICATION_H
 
+#pragma once
+
 #include <Toffee/Toffee.h>
 
 
 namespace Toffee
 {
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Application Settings
+//
+
+struct ApplicationSettings
+{
+    ApplicationSettings()
+        : win32FrameWidth( 800 )
+        , win32FrameHeight( 600 )
+    {}
+    
+    /// Win32 Only ///
+
+    Float win32FrameWidth;        // in pixels
+    Float win32FrameHeight;       // in pixels
+    std::string win32FrameTitle;  // The name on the Window's title bar.
+    std::string win32AssetsPath;
+};
+
 
 ///////////////////////////////////////////////////////////////////////////////
 //
@@ -22,7 +45,7 @@ public:
 
 
     // Main Loop Entry
-    Int Run();
+    Int Run( const ApplicationSettings& settings );
 
 
     /// CCApplicationProtocol Events ///
@@ -34,9 +57,15 @@ public:
 
 private:
     
+    /// Setup ///
+
+    // Implementation is platform dependent.
+    void SetupPlatform( const ApplicationSettings& settings );
+
+
     /// Scene Actions ///
 
-    virtual Scene* CreateScene( int sceneId ) = 0;
+    virtual Scene* CreateScene( Int sceneId ) = 0;
 
 
     /// Application Events ///

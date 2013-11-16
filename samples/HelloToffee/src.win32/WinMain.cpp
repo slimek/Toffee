@@ -10,16 +10,16 @@
 #endif
 
 
-using namespace cocos2d;
-
 int CALLBACK wWinMain(
     HINSTANCE instance, HINSTANCE prevInstance, WCHAR* cmdLine, int cmdShow )
 {
     HelloToffeeApp app;
 
-    auto eglView = CCEGLView::sharedOpenGLView();
-    eglView->setViewName( "HelloToffee" );
-    eglView->setFrameSize( 800, 600 );
+    ApplicationSettings s;
+    s.win32FrameWidth  = 800;
+    s.win32FrameHeight = 600;
+    s.win32FrameTitle  = "HelloToffee";
+    s.win32AssetsPath  = "..\\assets";
 
-    return app.Run();
+    return app.Run( s );
 }

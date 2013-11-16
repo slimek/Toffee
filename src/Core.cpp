@@ -65,8 +65,10 @@ void Application::applicationDidEnterBackground()
 // Application Main Loop Entry
 //
 
-Int Application::Run()
+Int Application::Run( const ApplicationSettings& settings )
 {
+    this->SetupPlatform( settings );
+
     return CCApplication::sharedApplication()->run();
 }
 

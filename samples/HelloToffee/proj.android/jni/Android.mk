@@ -33,5 +33,5 @@ include $(call import-add-path,$(GIT_ROOT)/cocos2d-x)
 include $(call import-add-path,$(GIT_ROOT)/cocos2d-x/cocos2dx/platform/third_party/android/prebuilt)
 include $(call import-module,cocos2dx)
 
-include $(call import-add-path,$(GIT_ROOT)/Toffee)
-include $(call import-module,Toffee.ndkproj/jni)
+include $(call import-add-path,$(GIT_ROOT)/)
+include $(call import-module,Toffee/proj.android/jni)
