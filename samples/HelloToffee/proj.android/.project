@@ -100,5 +100,10 @@
 			<type>2</type>
 			<locationURI>$%7BPARENT-1-PROJECT_LOC%7D/assets</locationURI>
 		</link>
+		<link>
+			<name>src.android</name>
+			<type>2</type>
+			<location>D:/Programs/Toffee/samples/HelloToffee/src.android</location>
+		</link>
 	</linkedResources>
 </projectDescription>

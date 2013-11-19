@@ -27,7 +27,10 @@ void Java_org_cocos2dx_lib_Cocos2dxRenderer_nativeInit(
 		view->setFrameSize( w, h );
 		
 		auto app = new HelloToffeeApp;
-		app->Run();
+
+		ApplicationSettings s;
+
+		app->Run( s );
 	}
 	else
 	{
