@@ -4,13 +4,16 @@ include $(CLEAR_VARS)
 
 LOCAL_MODULE := Toffee
 
-MY_SRC := ../../src
+TF_SRC := ../../src
+TF_SRC_ANDROID := ../../src.android
 
 LOCAL_SRC_FILES := \
-	$(MY_SRC)/Core.cpp
+	$(TF_SRC)/Core.cpp \
+	$(TF_SRC_ANDROID)/CoreAndroid.cpp
 	
 LOCAL_C_INCLUDES := \
-	$(LOCAL_PATh)/../../src \
+	$(LOCAL_PATH)/../../src.android \
+	$(LOCAL_PATH)/../../src \
 	$(LOCAL_PATH)/../../include \
 	$(GIT_ROOT)/Caramel/include \
 	$(GIT_ROOT)/CandyJar/include \
