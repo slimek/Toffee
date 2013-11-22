@@ -9,7 +9,7 @@ TF_SRC_ANDROID := ../../src.android
 
 LOCAL_SRC_FILES := \
 	$(TF_SRC)/Core.cpp \
-	$(TF_SRC_ANDROID)/CoreAndroid.cpp
+	$(TF_SRC).android/CoreAndroid.cpp
 	
 LOCAL_C_INCLUDES := \
 	$(LOCAL_PATH)/../../src.android \
