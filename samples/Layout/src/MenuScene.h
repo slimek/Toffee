@@ -1,0 +1,21 @@
+// Toffee Samples "Layout" - Menu Scene Header
+
+#ifndef __LAYOUT_MENU_SCENE_H
+#define __LAYOUT_MENU_SCENE_H
+
+#include <Toffee/Core/Scene.h>
+
+
+///////////////////////////////////////////////////////////////////////////////
+//
+// Menu Scene
+//
+
+class MenuScene : public Scene
+{
+};
+
+
+///////////////////////////////////////////////////////////////////////////////
+
+#endif // __LAYOUT_MENU_SCENE_H
