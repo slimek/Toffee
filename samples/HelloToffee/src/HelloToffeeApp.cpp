@@ -6,6 +6,18 @@
 #include "MenuScene.h"
 
 
+//
+// App Settings
+//
+
+const Float DESIGN_WIDTH  = 1024;
+const Float DESIGN_HEIGHT = 768;
+
+
+//
+// Application
+//
+
 HelloToffeeApp::HelloToffeeApp()
     : Application( MenuScene::ID )
 {
@@ -15,7 +27,7 @@ HelloToffeeApp::HelloToffeeApp()
 void HelloToffeeApp::OnDidFinishLaunching()
 {
     auto eglView = CCEGLView::sharedOpenGLView();
-    eglView->setDesignResolutionSize( 1024, 768, kResolutionShowAll );
+    eglView->setDesignResolutionSize( DESIGN_WIDTH, DESIGN_HEIGHT, kResolutionShowAll );
 }
 
 
