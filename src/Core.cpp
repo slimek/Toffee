@@ -67,7 +67,9 @@ void Application::applicationDidEnterBackground()
 
 Int Application::Run( const ApplicationSettings& settings )
 {
-    this->SetupPlatform( settings );
+    m_settings = settings;
+
+    this->SetupPlatform();
 
     return CCApplication::sharedApplication()->run();
 }

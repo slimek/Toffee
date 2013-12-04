@@ -12,6 +12,13 @@ HelloToffeeApp::HelloToffeeApp()
 }
 
 
+void HelloToffeeApp::OnDidFinishLaunching()
+{
+    auto eglView = CCEGLView::sharedOpenGLView();
+    eglView->setDesignResolutionSize( 1024, 768, kResolutionShowAll );
+}
+
+
 Scene* HelloToffeeApp::CreateScene( int sceneId )
 {
     switch ( sceneId )

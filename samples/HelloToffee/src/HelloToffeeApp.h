@@ -12,6 +12,10 @@ public:
     
     HelloToffeeApp();
 
+    /// Application Events ///
+
+    void OnDidFinishLaunching() override;
+
     
     /// Application Scene Actions ///
 

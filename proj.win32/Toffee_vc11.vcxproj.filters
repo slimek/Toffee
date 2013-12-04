@@ -30,6 +30,9 @@
     <ClInclude Include="..\include\Toffee\Core\Scene.h">
       <Filter>1. Public Packages\Core</Filter>
     </ClInclude>
+    <ClInclude Include="..\include\Toffee\Core\ApplicationSettings.h">
+      <Filter>1. Public Packages\Core</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\src\Core.cpp">

@@ -19,14 +19,17 @@ namespace Toffee
 // Application
 //
 
-void Application::SetupPlatform( const ApplicationSettings& settings )
+void Application::SetupPlatform()
 {
+    const ApplicationSettings& as = m_settings;
+    const DesktopSettings& ds = as.desktop;
+
     auto eglView = CCEGLView::sharedOpenGLView();
-    eglView->setViewName( settings.win32FrameTitle.c_str() );
-    eglView->setFrameSize( settings.win32FrameWidth, settings.win32FrameHeight );
+    eglView->setViewName( as.title.c_str() );
+    eglView->setFrameSize( ds.frameWidth, ds.frameHeight );
 
     auto fileUtils = CCFileUtils::sharedFileUtils();
-    fileUtils->addSearchPath( settings.win32AssetsPath.c_str() );
+    fileUtils->addSearchPath( ds.assetsPath.c_str() );
 }
 
 

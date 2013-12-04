@@ -16,10 +16,10 @@ int CALLBACK wWinMain(
     HelloToffeeApp app;
 
     ApplicationSettings s;
-    s.win32FrameWidth  = 800;
-    s.win32FrameHeight = 600;
-    s.win32FrameTitle  = "HelloToffee";
-    s.win32AssetsPath  = "..\\assets";
+    s.title = "HelloToffee";
+    s.desktop.frameWidth  = 800;
+    s.desktop.frameHeight = 600;
+    s.desktop.assetsPath  = "..\\assets";
 
     return app.Run( s );
 }
