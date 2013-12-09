@@ -5,7 +5,7 @@
 LOCAL_PATH := $(call my-dir)
 
 CANDY_LIB := $(GIT_ROOT)/CandyJar/lib/Android.Ndk/$(TARGET_ARCH_ABI)
-COCOS_LIB := $(GIT_ROOT)/cocos2d-x/lib/Android.Ndk/$(TARGET_ARCH_ABI)
+COCOS_LIB := $(GIT_ROOT)/Cocos2d-x/lib/Android.Ndk/$(TARGET_ARCH_ABI)
 
 include $(CLAER_VARS)
 LOCAL_MODULE := boost-chrono
@@ -56,10 +56,10 @@ TOFFEE_C_INCLUDES := \
 	$(GIT_ROOT)/Toffee/include \
 	$(GIT_ROOT)/Caramel/include \
 	$(GIT_ROOT)/CandyJar/include \
-	$(GIT_ROOT)/cocos2d-x/cocos2dx/kazmath/include \
-	$(GIT_ROOT)/cocos2d-x/cocos2dx/platform/android \
-	$(GIT_ROOT)/cocos2d-x/cocos2dx/include \
-	$(GIT_ROOT)/cocos2d-x/cocos2dx
+	$(GIT_ROOT)/Cocos2d-x/cocos2dx/kazmath/include \
+	$(GIT_ROOT)/Cocos2d-x/cocos2dx/platform/android \
+	$(GIT_ROOT)/Cocos2d-x/cocos2dx/include \
+	$(GIT_ROOT)/Cocos2d-x/cocos2dx
 
 TOFFEE_LDLIBS := \
 	-lGLESv2 \
