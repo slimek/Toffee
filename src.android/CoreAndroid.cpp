@@ -22,7 +22,7 @@ namespace Toffee
 // Application
 //
 
-void Application::SetupPlatform( const ApplicationSettings& settings )
+void Application::SetupPlatform()
 {
 }
 
