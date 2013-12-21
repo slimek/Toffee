@@ -61,7 +61,7 @@
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <OutDir>..\lib\$(Platform).$(Configuration)\</OutDir>
-    <IntDir>obj\$(Configuration)\</IntDir>
+    <IntDir>obj\$(Configuration).$(Platform)\</IntDir>
   </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
     <ClCompile>
@@ -69,7 +69,7 @@
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
       <PreprocessorDefinitions>WIN32;_LIB;_DEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\src;..\include;..\..\Caramel\include;..\..\CandyJar\include;..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\cocos2d-x\cocos2dx\platform\win32;..\..\cocos2d-x\cocos2dx\platform;..\..\cocos2d-x\cocos2dx;..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src;..\include;..\..\Caramel\include;..\..\CandyJar\include;..\..\Cocos2d-x2\cocos2dx\kazmath\include;..\..\Cocos2d-x2\cocos2dx\platform\third_party\win32\OGLES;..\..\Cocos2d-x2\cocos2dx\platform\win32;..\..\Cocos2d-x2\cocos2dx\include;..\..\Cocos2d-x2\cocos2dx</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
       <PrecompiledHeaderFile>ToffeePch.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -86,7 +86,7 @@
       <FunctionLevelLinking>true</FunctionLevelLinking>
       <IntrinsicFunctions>true</IntrinsicFunctions>
       <PreprocessorDefinitions>WIN32;_LIB;NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
-      <AdditionalIncludeDirectories>..\src;..\include;..\..\Caramel\include;..\..\CandyJar\include;..\..\cocos2d-x\cocos2dx\kazmath\include;..\..\cocos2d-x\cocos2dx\platform\third_party\win32\OGLES;..\..\cocos2d-x\cocos2dx\platform\win32;..\..\cocos2d-x\cocos2dx\platform;..\..\cocos2d-x\cocos2dx;..\..\cocos2d-x\cocos2dx\include</AdditionalIncludeDirectories>
+      <AdditionalIncludeDirectories>..\src;..\include;..\..\Caramel\include;..\..\CandyJar\include;..\..\Cocos2d-x2\cocos2dx\kazmath\include;..\..\Cocos2d-x2\cocos2dx\platform\third_party\win32\OGLES;..\..\Cocos2d-x2\cocos2dx\platform\win32;..\..\Cocos2d-x2\cocos2dx\include;..\..\Cocos2d-x2\cocos2dx</AdditionalIncludeDirectories>
       <DisableSpecificWarnings>4251</DisableSpecificWarnings>
       <PrecompiledHeaderFile>ToffeePch.h</PrecompiledHeaderFile>
     </ClCompile>
