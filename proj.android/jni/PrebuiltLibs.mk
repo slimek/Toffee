@@ -18,6 +18,11 @@ LOCAL_SRC_FILES := $(CANDY_LIB)/libboost-date_time.a
 include $(PREBUILT_STATIC_LIBRARY)
 
 include $(CLAER_VARS)
+LOCAL_MODULE := boost-filesystem
+LOCAL_SRC_FILES := $(CANDY_LIB)/libboost-filesystem.a
+include $(PREBUILT_STATIC_LIBRARY)
+
+include $(CLAER_VARS)
 LOCAL_MODULE := boost-system
 LOCAL_SRC_FILES := $(CANDY_LIB)/libboost-system.a
 include $(PREBUILT_STATIC_LIBRARY)
@@ -69,6 +74,7 @@ TOFFEE_LDLIBS := \
 TOFFEE_STATIC_LIBRARIES := \
 	boost-chrono \
 	boost-date_time \
+	boost-filesystem \
 	boost-system \
 	cocos2dx_static \
 	cocos_jpeg_static \
