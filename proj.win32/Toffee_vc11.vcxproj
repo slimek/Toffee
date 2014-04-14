@@ -14,7 +14,7 @@
     <ClInclude Include="..\include\Toffee\Core\Application.h" />
     <ClInclude Include="..\include\Toffee\Core\ApplicationSettings.h" />
     <ClInclude Include="..\include\Toffee\Core\Scene.h" />
-    <ClInclude Include="..\include\Toffee\Toffee.h" />
+    <ClInclude Include="..\include\Toffee\Setup\ToffeeDefs.h" />
     <ClInclude Include="..\src\ToffeePch.h" />
   </ItemGroup>
   <ItemGroup>

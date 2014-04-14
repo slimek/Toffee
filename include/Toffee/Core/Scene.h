@@ -3,7 +3,7 @@
 #ifndef __TOFFEE_SCENE_H
 #define __TOFFEE_SCENE_H
 
-#include <Toffee/Toffee.h>
+#include <Toffee/Setup/ToffeeDefs.h>
 
 
 namespace Toffee
@@ -14,7 +14,7 @@ namespace Toffee
 // Scene
 //
 
-class Scene : public cocos2d::CCScene
+class Scene : public CCScene
 {
 public:
 

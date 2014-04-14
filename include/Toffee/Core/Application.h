@@ -4,7 +4,7 @@
 #define __TOFFEE_CORE_APPLICATION_H
 #pragma once
 
-#include <Toffee/Toffee.h>
+#include <Toffee/Setup/ToffeeDefs.h>
 #include <Toffee/Core/ApplicationSettings.h>
 
 
@@ -16,7 +16,7 @@ namespace Toffee
 // Application
 //
 
-class Application : public cocos2d::CCApplication
+class Application : public CCApplication
 {
 public:
 

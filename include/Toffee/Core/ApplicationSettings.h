@@ -4,7 +4,7 @@
 #define __TOFFEE_CORE_APPLICATION_SETTINGS_H
 #pragma once
 
-#include <Toffee/Toffee.h>
+#include <Toffee/Setup/ToffeeDefs.h>
 
 
 namespace Toffee

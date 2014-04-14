@@ -16,13 +16,13 @@
     <Filter Include="1. Public Packages\Core">
       <UniqueIdentifier>{a2842cf8-0199-4431-b60f-c438db8fad49}</UniqueIdentifier>
     </Filter>
+    <Filter Include="1. Public Packages\Setup">
+      <UniqueIdentifier>{af9796c4-177a-43ce-ae06-a3a8dd809f2f}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\include\Toffee\Core\Application.h">
       <Filter>1. Public Packages\Core</Filter>
-    </ClInclude>
-    <ClInclude Include="..\include\Toffee\Toffee.h">
-      <Filter>1. Public Packages</Filter>
     </ClInclude>
     <ClInclude Include="..\src\ToffeePch.h">
       <Filter>3. Precompiled Header</Filter>
@@ -32,6 +32,9 @@
     </ClInclude>
     <ClInclude Include="..\include\Toffee\Core\ApplicationSettings.h">
       <Filter>1. Public Packages\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\include\Toffee\Setup\ToffeeDefs.h">
+      <Filter>1. Public Packages\Setup</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
